@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--CABEÇALHO DA PÁGINA-->
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../formulario.css">
+</head>
+
+<!--CORPO DA PÁGINA-->
+<body>
+
+	<h1>Cadastro de Disciplina</h1>
+	<!--FORMULÁRIO-->
+	<form class="formulario">
+		<table>
+		<tr> <td><label for="icodDisciplina">Código:</label></td> <td><input id="icodDisciplina" type="text" name="codDisciplina" maxlength="5" size="5"></td> </tr>	
+		<tr> <td><label for="iNomeDisciplina">Disciplina:</label></td> <td><input id="iNomeDisciplina" type="text" name="nomeDisciplina" maxlength="40" size="40"</td> </tr>			
+		<tr> <td><label for="iNomeDisciplina">Departameno:</label></td> <td><select>
+			<option value="volvo" selected><-Selecione-></option>
+			<option value="volvo">Matemática</option>
+		  	<option value="volvo">Línguas</option>
+		  	<option value="volvo">Departamento de Arte e Esportes</option>		
+		</select></td></tr>				
+		<tr> </tr>
+		<tr> <td><input class="botao" type="submit" name="salvar" value="Salvar"></td> <td><input class="botao" type="submit" name="cancelar" value="Cancelar"></td></tr> 
+		</table><br>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body{
+	font-family: sans-serif;
+}
+
+body h1{
+	text-align: center;
+	font-size: 20pt;
+	color: #006699;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px blue;
+	margin-bottom: 0px;
+}
+.formulario{
+	position: relative;
+	width: 70%; /*estava em 450px*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+.botao{
+	background:#006699;
+    color:#ffffff;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+input{     
+    border: 0.5px solid rgba(0,0,0,.2);
+    border-radius:4px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    font-size: 14pt;
+}
+
+input:hover{
+	box-shadow: 0px 0px 10px blue;
+}
+
+select{
+	border: 0.5px solid rgba(0,0,0,.2);
+    border-radius:4px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    font-size: 14pt;
+}
+
+
+/*FORMATAÇÃO DA TABELA*/
+table{
+	margin: auto;
+}
