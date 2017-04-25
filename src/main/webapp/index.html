@@ -4,55 +4,100 @@
   <head>
     <meta charset="utf-8"/>
     <title>Curso de HTML</title> 
-    <link rel="stylesheet" type="text/css" href="style/index.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- CÓDIGO DO BOOTSTRAP    -->
+    <!-- CÓDIGO DO BOOTSTRAP    -->
+    
+    <style>
+      .aside-left{
+        width: 60%;
+        position: relative;
+        display: block;
+        float: left;
+        box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+        margin: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        height: 400px;
+      }
+      .aside-left h1{
+        text-align: center;
+        color: #006699;
+        font-weight: bolder;      
+      }
+      .aside-right{
+        position: relative;
+        width: 33%;
+        display: block;
+        float: right;
+        box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+        margin: 5px;
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .aside-right h1{
+        text-align: center;
+        color: #006699;
+        font-weight: bolder;      
+      }
+      #logo{
+        width: 200px;
+        margin: auto;
+      }
+      footer.rodape{
+        clear: both;
+      }
+    </style>
+
+
   </head>
   
   <body>
-  
-    <div id="container">
-      <header class="cabecalho-main">
-        SISTEMA DE GESTÃO ESCOLAR ONLINE<br/>
+    <div class="interface">
+      <header class="cabecalho">
+        <h1>SISTEMA DE GESTÃO ESCOLAR ONLINE</h1>
         Gestão Escolar com Qualidade e Praticidade
       </header>
-      
-      <div id="left">
-          <div id="escolas">
-            <ul id="menu-lateral">
-              <li><a href="alunos/gerenciaAluno.html">Gestão de Alunos</a></li>
-              <li><a href="CadAluno.html">E.M.E.F DUQUE DE CAXIAS</a></li>
-              <li><a href="CadProfessor.html">E.M.E.F DOM PEDRO I</a></li>
-              <li><a href="" >ESCOLA 04</a></li>
-              <li><a href="" >ESCOLA 05</a></li>
-              <li><a href="" >ESCOLA 06</a></li>
-              <li><a href="" >ESCOLA 07</a></li>
-              <li><a href="" >ESCOLA 08</a></li>
-              <li><a href="" >ESCOLA 09</a></li>
-              <li><a href="" >ESCOLA 10</a></li>
-            </ul>
-          </div>  
-      </div>
-                  
-      <div id="right">
-        <h3>A educação é o mais poderoso multiplicador econômico e social.</h3>
-        <figure id="logo-sistema">
-          <img src="imagens/LOGO.jpg" alt="Home" />
-          <figcaption>
-            Educando para o Futuro
-          </figcaption>
+
+      <aside class="aside-left">
+
+
+<nav class="menu">
+        <ul>
+          <li><a href="alunos/gerenciaAluno.html" target="_self">Alunos</a></li>
+          <li><a href="disciplinas/gerenciaDisciplina.html" target="_self"> Disciplinas</a></li>
+          <li><a href="#" target=""> Professores</a></li>
+          <li><a href="#" target=""> Turmas</a></li>
+          <li><a href="#"> Excluir</a></li>
+        </ul> 
+      </nav>
+
+
+
+
+        <h1>A educação é o mais poderoso multiplicador econômico e social.</h1>
+        <figure id="logo">
+          <img src="" alt="Logo da Escola">
+          <figcaption>Educando para o futuro</figcaption>
         </figure>
-      </div>
+      </aside> 
       
+      <aside class="aside-right">
+        <h1>Links úteis</h1>
+        <ul id="menu-lateral">
+          <li><a href="alunos/gerenciaAluno.html">Gestão de Alunos</a></li>
+          <li><a href="CadAluno.html">E.M.E.F DUQUE DE CAXIAS</a></li>
+          <li><a href="CadProfessor.html">E.M.E.F DOM PEDRO I</a></li>
+        </ul>
+      </aside>
       
-      
-      <footer class="rodape-main">
+      <footer class="rodape">
         Sistema de Gestão Escolar.<br/>
         Copyright &copy; 2017 - By Jones Quito<br/>
         <a href="http://facebook.com/jonesquito" target="black">Facebook</a> | <a href="jonesdhy@hotmail.com" target= black>E-mail</a><br/>
         <marquee width="200">jonesdhy@hotmail.com</marquee><br/>
-        
       </footer>
-    </div>
-    
+    </div> 
   </body>
 
 </html>

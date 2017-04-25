@@ -3,33 +3,17 @@
 <!--CABEÇALHO DA PÁGINA-->
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../fieldset-compacto.css">
 	<link rel="stylesheet" type="text/css" href="../formulario.css">
-	<style>
-		.conjuntoCampos{
-			border-radius: 4px;
-			border: none;
-			box-shadow: 1px 1px 8px rgba(0,0,0,.5);
-			border-style: none;
-			width: 400px;
-			margin: auto;
-		}
-		.conjuntoCampos legend{
-			font-size: 10pt;
-			color: #006699;
-			text-shadow: 1px 1px 1px blue;
-		}
-
-
-		.botao{
-		    padding: 3px;
-		    font-size: 10pt;
-		}
-		td{
-			padding: 3px;
-			margin: 5px;
-		}
 	
+	
+	<style>
+		/****************** FORMATAÇÃO DE TABELAS *********************/
+		
+
 	</style>
+
 </head>
 
 <!--CORPO DA PÁGINA-->
@@ -38,21 +22,49 @@
 	<h1>Pesquisa de Aluno</h1>
 	<!--FORMULÁRIO-->
 	<form class="formulario">
-		<fieldset class="conjuntoCampos">
+
+		<fieldset class="fieldset-compacto">
 			<legend>Tipo de Pesquisa</legend>
-			<table>
-				<tr> <td><input type="radio" name="tipoPesquisa" checked /> Por Matrícula </td> <td rowspan="2"><input type="text" name="matricula"></td> </tr>
-				<tr> <td><input type="radio" name="tipoPesquisa" id="idRadioNome"/> Por Nome</td> </tr><br>	
-				<tr> <td> </td> </tr>
-				<tr> <td><input class="botao" type="submit" name="Buscar" value="Buscar" disabled></td> <td><input class="botao" type="submit" name="limpar" value="Limpar" disabled></td></tr> 
+			<table >
+				<tr> 
+					<td><input type="radio" name="tipoPesquisa" checked /> Por Matrícula </td> 
+					<td rowspan="2"><input type="text" name="matricula"></td> 
+				</tr>
+				<tr> 
+					<td><input type="radio" name="tipoPesquisa" id="idRadioNome"/> Por Nome</td> 
+				</tr><br>	
+				<tr> 
+					<td><input class="botao-pequeno" type="submit" name="Buscar" value="Buscar"></td> 
+					<td><input class="botao-pequeno" type="submit" name="limpar" value="Limpar"></td>
+				</tr> 
 			</table>
 		</fieldset>
-		<br/> <br/>
-		<table>
-		<tr> <th>Matrícula</th> <th>Nome</th> <th>Nascimento</th> <th>RG</th> <th>Cidade</th></tr>
-		<tr> <td>123</td> <td>Jones Quito</td> <td>28/08/1987</td> <td>125487598</td> <td>Goiânia</td></tr>
-		<tr> <td>321</td> <td>Simone Cardoso</td> <td>15/11/1991</td> <td>4455879</td> <td>Goiania</td></tr>
-			
+		<br/>
+		<table class="tabela">
+			<tr>
+				<th>Selecione</th>  
+				<th>Matrícula</th> 
+				<th>Nome</th> 
+				<th>Nascimento</th> 
+				<th>RG</th> 
+				<th>Cidade</th>
+			</tr>
+			<tr> 
+				<td><input type="radio" name="aluno"></td>
+				<td>123</td> 
+				<td>Jones Quito</td> 
+				<td>28/08/1987</td> 
+				<td>125487598</td> 
+				<td>Goiânia</td>
+			</tr>
+			<tr> 
+				<td><input type="radio" name="aluno"></td>
+				<td>321</td> 
+				<td>Simone Cardoso</td> 
+				<td>15/11/1991</td> 
+				<td>4455879</td> 
+				<td>Goiania</td>
+			</tr>	
 		</table>
 	</form>
 	

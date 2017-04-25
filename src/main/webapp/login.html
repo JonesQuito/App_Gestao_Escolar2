@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Tela de Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="formulario.css" />
+	<link rel="stylesheet" type="text/css" href="fieldset-compacto.css" />
+	<style>
+		a{
+			opacity: 0.1;
+		}
+	</style>
+	<script>
+		function clearFields(){
+			loginInformado.value = '';
+	       	senhaInformada.value = '';
+		}
+	    function logar(){
+	      var login = "jones";
+	      var senha = "123";
+		  loginInformado = document.getElementById('iLogin');
+		  senhaInformada = document.getElementById('iSenha');
+		   
+	      if((login == loginInformado.value) && (senha == senhaInformada.value)){
+	       	document.getElementById('iHomeLink').href = "index.html";
+	       	document.getElementById('iHomeLink').style.opacity = '1';
+	       	alert("Acesso liberado através do link abaixo!!");
+	       	clearFields();
+	      }else{
+	       	alert("Login e/ou senha estão incorretos!!");
+	       	clearFields();
+	      }
+	    }
+    </script>
+</head>
+<body>
+	
+	<form class="formulario">
+		<h1>Segurança do Sistema</h1>
+		<fieldset class="fieldset-compacto">
+			<legend>Login e Senha</legend>
+			<table>
+				<tr>
+					<td><label for="iLogin">Login</label></td>
+					<td><input type="text" id="iLogin"></td>
+				</tr>
+				<tr>
+					<td><label for="iSenha"></label>Senha</td>
+					<td><input type="password" id="iSenha"></td>
+				</tr>
+				<tr>
+					<td><input class="botao-pequeno" type="submit" value="Logar" onclick="logar()"></td>
+					<td><input class="botao-pequeno" type="submit" value="Cancelar"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><a id="iHomeLink" href="#" >Acesso à Home Page</a></td>
+				</tr>
+			</table>
+
+		</fieldset>
+
+	</form>
+	
+	
+</body>
+</html>

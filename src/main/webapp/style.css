@@ -1,17 +1,18 @@
 @charset "utf-8";
-
-.interface{
+/****************** FORMATAÇÃO DA DIV MASTER(PRINCIPAL) DA PÁGINA ******************/
+div.interface{
 	font-family: sans-serif;
 	top: -7px;
 	padding: 0px;
 	position: relative;
 	margin: auto;
-	width: 70%;
+	width: 100%;
 	box-sizing: border-box;
-	box-shadow: 1px 1px 8px rgba(0,0,0,.5);		
+	box-shadow: 0px 0px 8px rgba(0,0,0,.5);		
 }
 
-.cabecalho{
+/******************* FORMATAÇÃO DE CABEÇALHOS **************************/
+header.cabecalho{
 	text-align: center;
 	color: white;
 	font-weight: bolder;
@@ -24,18 +25,61 @@
 	margin-bottom: -5px;
 }
 
-.conteudo{
+/******************** FORMATAÇÃO DA DIV DE CONTEÚDO ******************/
+div.conteudo{
 	position: relative;
 	width: 100%;
 	margin: auto;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	box-shadow: 0px 0px 8px rgba(0,0,0,.3);
 	padding: 10px;
 	top: 10px;
 	box-sizing: border-box;
 }
 
-/*FORMATAÇÃO DO RODAPÉ*/
-.rodape{
+/****************** FORMATAÇÃO DO NAV CLASS="MENU" ***********************/ 
+nav.menu{
+	margin-top: -25px;
+	background-color: rgba(0,0,0,.3);
+	box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+nav.menu ul{
+	width: 80%;
+}
+nav.menu li{
+	display: inline-block;
+	list-style: none;
+	background:#006699;
+	padding: 5px;
+	margin: 3px;
+	border-radius:4px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}
+nav.menu a{
+	text-decoration: none;
+	color:#ffffff;
+}
+nav.menu li img{
+	margin: -5px;
+}
+nav.menu li:hover{
+	box-shadow: 0px 0px 5px blue; 
+	-webkit-transform: scale(1.1);
+}
+nav.menu li img:hover{
+	-webkit-transform: scale(1.3);
+}
+
+/******************* FORMATAÇÃO DE IFRAME.FRAME ************************/
+iframe.frame{
+	border: none;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	position: relative;
+	width: 100%;
+	height: 450px;
+}
+
+/************************* FORMATAÇÃO DO RODAPÉ **************************/
+footer.rodape{
 	text-align: center;
 	color: white;
 	font-size: 15pt;
@@ -48,94 +92,29 @@
 	box-sizing: border-box;
 }
 
-.menu{
-	margin-top: -25px;
-	background-color: rgba(0,0,0,.3);
-	box-shadow: 1px 1px 5px rgba(0,0,0,.5);
-}
-
-.menu ul{
-	width: 80%;
-}
-
-.menu li{
-	display: inline-block;
-	list-style: none;
-	background:#006699;
-	padding: 5px;
-	margin: 3px;
-	border-radius:4px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-}
-
-.menu a{
-	text-decoration: none;
-	color:#ffffff;
-}
-
-.menu li:hover{
-	box-shadow: 0px 0px 5px blue; 
-	-webkit-transform: scale(1.1);
-}
-
-.menu li img{
-	margin: -5px;
-}
-.menu li img:hover{
-	-webkit-transform: scale(1.3);
-}
-
-iframe.frame{
-	border: none;
-	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-
-
-	position: relative;
-	width: 100%;
-	height: 450px;
-}
-
-/*
-.botao{
-	background:#006699;
-    color:#ffffff;
-    border-radius: 3px;
-    padding: 6px;
-    font-size: 12pt;
-    font-weight: bolder;
-}
-.formulario{
-	position: relative;
-	width: 90%; /*estava em 450px
-	margin-left: auto;
-	margin-right: auto;
-}
-
-input{     
-    border: 0.5px solid rgba(0,0,0,.2);
-    border-radius:4px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
-    font-size: 14pt;
-}
-
-input:hover{
-	box-shadow: 2px 2px 10px blue;
-}
-
-select{
-	border: 0.5px solid rgba(0,0,0,.2);
-    border-radius:4px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
-    font-size: 14pt;
-}
-
-FORMATAÇÃO DA TABELA
-table{
+/*###################### FORMATAÇÃO DE TABELAS ##############################*/
+table.tabela{
+	width: 90%;
+	font-family: arial, sans-serif;
+	box-shadow: 1px 1px 8px rgba(0,0,0,.5);
+	border-radius: 4px;
+	padding: 10px;
 	margin: auto;
+	margin-top: 10px;
+}
+table.tabela th{
+	background-color: rgba(00,66,99, .3);
+}
+table.tabela tr{
+	background-color: rgba(0,0,0,.1);
+	border-bottom: 5px solid black;
+	box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+table.tabela td{
+	padding: 4px;
+	text-align: center;
+	margin-right: 15px;
 }
 
-h2{text-align: center;}
-
-input{margin: 3px;}
-/*
-
+/********************* FORMATAÇÃO DE FORMULÁRIO *************************/
+/*********************     formulario.css    ****************************/
